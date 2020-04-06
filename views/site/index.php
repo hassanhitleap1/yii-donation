@@ -84,10 +84,10 @@ $this->title = 'covid 19 Italy';
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="cat_about">
                     <div class="icon_wrapper">
-                        <img src="{{asset('theme/images/corona/icon1.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon1.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_img">
-                        <img src="{{asset('theme/images/corona/icon_11.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>theme/images/corona/icon_11.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
                         <h1>OVERVIEW</h1>
@@ -99,10 +99,10 @@ $this->title = 'covid 19 Italy';
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="cat_about">
                     <div class="icon_wrapper">
-                        <img src="{{asset('theme/images/corona/icon2.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon2.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_img">
-                        <img src="{{asset('theme/images/corona/icon_2.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_2.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
                         <h1>PREVENTION</h1>
@@ -114,10 +114,10 @@ $this->title = 'covid 19 Italy';
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="cat_about">
                     <div class="icon_wrapper">
-                        <img src="{{asset('theme/images/corona/icon3.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon3.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_img cat_img_3">
-                        <img src="{{asset('theme/images/corona/icon_3.png')}}" alt="img" class="img-responsive">
+                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_3.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
                         <h1>SYMPTOMS</h1>
@@ -136,13 +136,13 @@ $this->title = 'covid 19 Italy';
         <div class="row">
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="abt_img abt_box">
-                    <img src="{{asset('theme/images/corona/abt_img.jpg')}}" alt="img" class="img-responsive">
+                    <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/abt_img.jpg" alt="img" class="img-responsive">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 abt_section">
                 <div class="abt_heading_wrapper">
                     <h1 class="med_bottompadder20">How COVID-19 Spreads</h1>
-                    <img src="{{asset('theme/images/line.png')}}" alt="title" class="med_bottompadder20">
+                    <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <div class="abt_txt">
                     <h3>Person-to-person spread</h3>
@@ -165,54 +165,24 @@ $this->title = 'covid 19 Italy';
 <!--about us wrapper end-->
 
 
-<!--vedio wrapper start-->
-<div class="vedio_wrapper">
-    <div class="vedio_overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="vedio_heading_wrapper wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="med_bottompadder20">Protect yourself: advice for the public</h1>
-                    <img src="{{asset('theme/images/Icon_team.png')}}" alt="line" class="med_bottompadder20">
-                    <p>Symptoms of Coronavirus 2019</p>
-                    <h4><a class="popup-youtube" href="https://www.youtube.com/embed/BtN-goy9VOY"><img src="{{asset('theme/images/corona/play-icon.png')}}" alt="Play"> play video</a></h4>
-                    <div class="video_btn_wrapper right">
-                        <ul>
-                            <li><a class="btn" href="about_us_corona.html">About Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- counter wrapper start-->
 <div class="counter_section">
     <div class="counter-section med_bottommargin100 section-padding" data-stellar-background-ratio="0.5">
         <div class="container text-center">
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="icon">
-                        <a href="#"><img src="{{asset('theme/images/png/success.png')}}" alt="img" class="img-responsive"></a>
-                    </div>
-                    <div class="count-description">
-                        <span class="timer">187</span>
-                        <h5 class="con2">Total Countries</h5>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                    <div class="icon">
-                        <a href="#"><img src="{{asset('theme/images/png/patient.png')}}" alt="img" class="img-responsive"></a>
+                        <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/patient.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
                         <span class="timer">294110</span>
                         <h5 class="con1">Confirmed cases</h5>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="icon">
-                        <a href="#"><img src="{{asset('theme/images/png/doctor.png')}}" alt="img" class="img-responsive"></a>
+                        <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/doctor.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
                         <span class="timer">12944</span>
@@ -220,9 +190,9 @@ $this->title = 'covid 19 Italy';
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="icon">
-                        <a href="#"><img src="{{asset('theme/images/png/heart.png')}}" alt="img" class="img-responsive"></a>
+                        <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/heart.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
                         <span class="timer">1020200</span>

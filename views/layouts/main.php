@@ -42,7 +42,8 @@ Template Name:Couronne
 <?= Alert::widget() ?>
 
 <div id="preloader">
-    <div id="status"><img src="<?= Yii::app()->baseUrl?>'theme/images/preloader.gif" id="preloader_image" alt="loader">
+
+    <div id="status"><img src="<?= Yii::getAlias('@web')?>/theme/images/preloader.gif" id="preloader_image" alt="loader">
     </div>
 </div>
 <!--top header start-->
@@ -73,16 +74,14 @@ Template Name:Couronne
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 wow bounceInDown" data-wow-delay="0.3s">
                 <div class="header_logo">
-                    <a href="index.html" class="hidden-xs"><img src="{{asset('theme/images/corona/logo2.png')}}" alt="logo" title="logo" class="img-responsive  d-none d-sm-none d-md-block d-lg-block"></a>
+                    <a href="index.html" class="hidden-xs"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/logo2.png" alt="logo" title="logo" class="img-responsive  d-none d-sm-none d-md-block d-lg-block"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
                 <div class="kv_navigation_wrapper">
 
                     <div class="et_navbar_search_wrapper d-none d-sm-none d-md-block d-lg-block ">
-                        <div class="et_search_bar" id="search_button">
-                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        </div>
+                        
                         <div id="search_open" class="et_search_box">
                             <input type="text" placeholder="Search here">
                             <button><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -91,16 +90,19 @@ Template Name:Couronne
 
                     <div class="mainmenu  d-xl-block d-lg-block d-md-block d-sm-none d-none">
                         <ul class="main_nav_ul">
-
-                            <li class="has-mega gc_main_navigation"><a href="{{url('/')}}" class="gc_main_navigation hover_color"> Home&nbsp; </a>
+                           
+                            <li class="has-mega gc_main_navigation">
+                                <?= Html::a('Home &nbsp;', ['site/index'], ['class' => 'gc_main_navigation hover_color'])  ?> 
                             </li>
-                            <li class="has-mega gc_main_navigation"><a href="{{url('/corona')}}" class="gc_main_navigation hover_color">Corona&nbsp; </a>
+                            <li class="has-mega gc_main_navigation">
+                                <?= Html::a('Corona &nbsp;', ['site/corona'], ['class' => 'gc_main_navigation hover_color']) ?> 
+                               
                             </li>
-                            <li class="has-mega gc_main_navigation"><a href="{{url('/contact_us')}}" class="gc_main_navigation hover_color"> contact us&nbsp; </a>
-
+                            <li class="has-mega gc_main_navigation">
+                                <?= Html::a('contact us &nbsp;', ['site/contact-us'], ['class' => 'gc_main_navigation hover_color']) ?> 
                             </li>
 
-                            <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate</a></li>
+                            <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate &nbsp;</a> </li>
 
                         </ul>
                     </div>
@@ -113,7 +115,7 @@ Template Name:Couronne
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="gc_logo logo_hidn d-block d-sm-block d-md-none d-lg-none d-xl-none">
-                            <a href="#"><img src="{{asset('theme/images/corona/logo.png')}}" class="img-responsive" alt="logo"></a>
+                            <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/logo.png" class="img-responsive" alt="logo"></a>
                         </div>
                     </div>
 
@@ -144,35 +146,20 @@ Template Name:Couronne
             </div>
 
             <div id="sidebar">
-                <h1>DEEP<span>MIND</span></h1>
+                <h1>Covid 19 <span>Italy</span></h1>
                 <div id="toggle_close">&times;</div>
                 <div id='cssmenu' class="wd_single_index_menu">
                     <ul>
-                        <li><a href='index.html'>index</a>
-
+                        <li>
+                          <?= Html::a('Home', ['site/index']) ?>
                         </li>
-                        <li><a href='about_us_corona.html'>About Corona</a></li>
-                        <li><a href='symptoms.html'>symptoms</a></li>
-                        <li><a href='prevention.html'>prevention</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery_3.html">Gallery</a></li>
-                                <li><a href="our_doctors.html">our doctors</a></li>
-                                <li><a href="doctor.html">doctor single</a></li>
-                            </ul>
+                        <li>
+                        <?= Html::a('Corona', ['site/corona']) ?>
                         </li>
-                        <li class='has-sub'><a href='#'>blog</a>
-                            <ul>
-                                <li><a href="blog_category.html">blog category</a></li>
-                                <li><a href="blog_single.html">blog single</a></li>
-                            </ul>
+                        <li>
+                         <?= Html::a('contact us', ['site/contact-us']) ?>
                         </li>
-                        <li class='has-sub'><a href='#'>contact</a>
-                            <ul>
-                                <li><a href="{{url('/contact_us')}}">contact us</a></li>
-                                <li><a href="appointment.html">appointment </a></li>
-                            </ul>
-                        </li>
+                    
                         <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate</a></li>
                     </ul>
                 </div>
@@ -194,7 +181,7 @@ Template Name:Couronne
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="address_main">
                         <div class="footer_widget_add">
-                            <a href="#"><img src="{{asset('theme/images/corona/index_2_logo.png')}}" class="img-responsive" alt="footer_logo" /></a>
+                            <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/index_2_logo.png" class="img-responsive" alt="footer_logo" /></a>
 
                         </div>
                         <div class="footer_box_add">
@@ -218,14 +205,20 @@ Template Name:Couronne
                             <div class="col-xl-12 col-lg-12 col-md-21 col-sm-12 col-12 respons_footer_nav d-none d-sm-none d-md-block">
                                 <div class="footer_heading footer_menu">
                                     <h1 class="med_bottompadder10">Links</h1>
-                                    <img src="{{asset('theme/images/line.png')}}" class="img-responsive" alt="img" />
+                                    <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" class="img-responsive" alt="img" />
                                 </div>
                                 <div class="footer_ul_wrapper">
 
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="{{url('/description')}}">description</a></li>
-                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="{{url('/privacy-policy')}}">privacy policy</a></li>
-                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="{{url('/terms-conditions')}}">terms conditions</a></li>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                            <?= Html::a('description', ['site/description']) ?>
+                                        </li>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                            <?= Html::a('privacy policy', ['site/privacy-policy']) ?>
+                                        </li>
+                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                            <?= Html::a('terms-conditions', ['site/terms-conditions']) ?>
+                                        </li>
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>
                                     </ul>
                                 </div>
