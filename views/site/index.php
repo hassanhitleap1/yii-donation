@@ -3,7 +3,8 @@
 /* @var $this yii\web\View */
 
 $this->title = 'covid 19 Italy';
-?>
+
+use yii\helpers\Html; ?>
 <!--header wrapper end-->
 <!--slider wrapper start-->
 <div class="slider_main_wrapper">
@@ -51,7 +52,7 @@ $this->title = 'covid 19 Italy';
                     <div class="cat_txt">
                         <h1>PREVENTION</h1>
                         <p>To prevent infection and to slow transmission of COVID-19! </p>
-                        <a href="prevention.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                            <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/prevention']) ?>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@ $this->title = 'covid 19 Italy';
                     <div class="cat_txt">
                         <h1>SYMPTOMS</h1>
                         <p>The COVID-19 virus affects different people in different ways.</p>
-                        <a href="symptoms.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/symptoms']) ?>
                     </div>
                 </div>
             </div>

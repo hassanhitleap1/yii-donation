@@ -70,7 +70,7 @@ Template Name:Couronne
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 wow bounceInDown" data-wow-delay="0.3s">
                 <div class="header_logo">
-                    <a href="index.html" class="hidden-xs"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/logo2.png" alt="logo" title="logo" class="img-responsive  d-none d-sm-none d-md-block d-lg-block"></a>
+                    <a href="<?='/'?>" class="hidden-xs"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/logo2.png" alt="logo" title="logo" class="img-responsive  d-none d-sm-none d-md-block d-lg-block"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12">
@@ -174,7 +174,7 @@ Template Name:Couronne
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="address_main">
                         <div class="footer_widget_add">
-                            <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/index_2_logo.png" class="img-responsive" alt="footer_logo" /></a>
+                            <a href="<?='/'?>"><img src="<?= Yii::getAlias('@web')?>/theme/images/corona/index_2_logo.png" class="img-responsive" alt="footer_logo" /></a>
 
                         </div>
                         <div class="footer_box_add">
