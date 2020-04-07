@@ -11,7 +11,28 @@ use yii\captcha\Captcha;
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-contact">
+<div class="med_tittle_section">
+    <div class="med_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="med_tittle_cont_wrapper">
+                    <div class="med_tittle_cont">
+                        <h1><?= Html::encode($this->title) ?></h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <?= Html::a('Home', ['site/index']) ?>
+                            </li>
+                            <li><?= Html::encode($this->title) ?></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>

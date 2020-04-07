@@ -1,7 +1,16 @@
-@extends('layouts.main')
+<?php
 
-@section('content')
-<!--med_tittle_section-->
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model app\models\ContactForm */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use yii\captcha\Captcha;
+
+$this->title = 'corona';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 <div class="med_tittle_section">
     <div class="med_img_overlay"></div>
     <div class="container">
@@ -9,11 +18,12 @@
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="med_tittle_cont_wrapper">
                     <div class="med_tittle_cont">
-                        <h1>About Corona Virus </h1>
+                        <h1><?= Html::encode($this->title) ?></h1>
                         <ol class="breadcrumb">
-                            <li><a href="{{url('/')}}">Home</a>
+                            <li>
+                                <?= Html::a('Home', ['site/index']) ?>
                             </li>
-                            <li>About Us Corona</li>
+                            <li><?= Html::encode($this->title) ?></li>
                         </ol>
                     </div>
                 </div>
@@ -28,13 +38,13 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="about_img">
-                    <img src="{{asset('theme/images/corona/about_us_bg.jpg')}}" alt="img" class="img-responsive">
+                    <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/about_us_bg.jpg" alt="img" class="img-responsive">
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 med_toppadder70">
                 <div class="abt_heading_wrapper abt_2_heading">
                     <h1 class="med_bottompadder20">About Corona Virus.</h1>
-                    <img src="{{asset('theme/images/line.png')}}" alt="title" class="med_bottompadder20">
+                    <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <div class="abt_txt">
                     <h3>PERSON-TO-PERSON SPREAD</h3>
@@ -63,5 +73,3 @@
         </div>
     </div>
 </div>
-<!--about us section end-->
-@endsection

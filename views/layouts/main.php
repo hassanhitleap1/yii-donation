@@ -6,10 +6,6 @@
 use app\assets\MainAsset;
 use app\widgets\Alert;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
 MainAsset::register($this);
 ?>
@@ -99,7 +95,7 @@ Template Name:Couronne
                                
                             </li>
                             <li class="has-mega gc_main_navigation">
-                                <?= Html::a('contact us &nbsp;', ['site/contact-us'], ['class' => 'gc_main_navigation hover_color']) ?> 
+                                <?= Html::a('contact us &nbsp;', ['site/contact'], ['class' => 'gc_main_navigation hover_color']) ?>
                             </li>
 
                             <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate &nbsp;</a> </li>
@@ -157,7 +153,7 @@ Template Name:Couronne
                         <?= Html::a('Corona', ['site/corona']) ?>
                         </li>
                         <li>
-                         <?= Html::a('contact us', ['site/contact-us']) ?>
+                         <?= Html::a('contact us', ['site/contact']) ?>
                         </li>
                     
                         <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate</a></li>
@@ -169,9 +165,6 @@ Template Name:Couronne
 </div>
 
 <?= $content ?>
-
-
-
 
 <!-- footer wrapper start-->
 <div class="footer_wrapper">
@@ -217,7 +210,7 @@ Template Name:Couronne
                                             <?= Html::a('privacy policy', ['site/privacy-policy']) ?>
                                         </li>
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i>
-                                            <?= Html::a('terms-conditions', ['site/terms-conditions']) ?>
+                                            <?= Html::a('terms-conditions', ['site/terms-and-conditions']) ?>
                                         </li>
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>
                                     </ul>

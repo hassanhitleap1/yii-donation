@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Pages;
 use app\models\SignupForm;
 use Yii;
 use yii\filters\AccessControl;
@@ -148,8 +149,35 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
-    {
-        return $this->render('about');
+    public function actionAbout(){
+        $page=Pages::find()->where(['key'=>'about'])->one();
+        return $this->render('about',['page'=>$page]);
     }
+
+    public function actionCorona(){
+        $page=Pages::find()->where(['key'=>'corona'])->one();
+        return $this->render('corona',['page'=>$page]);
+    }
+    public function actionDescription(){
+        $page=Pages::find()->where(['key'=>'description'])->one();
+        return $this->render('description',['page'=>$page]);
+    }
+    public function actionPrivacyPolicy(){
+        $page=Pages::find()->where(['key'=>'privacy-policy'])->one();
+        return $this->render('privacy-policy',['page'=>$page]);
+    }
+    public function actionTermsAndConditions(){
+        $page=Pages::find()->where(['key'=>'terms-and-conditions'])->one();
+        return $this->render('terms-and-conditions',['page'=>$page]);
+    }
+    public function actionPrevention(){
+        $page=Pages::find()->where(['key'=>'prevention'])->one();
+        return $this->render('prevention',['page'=>$page]);
+    }
+    public function actionSymptoms(){
+        $page=Pages::find()->where(['key'=>'symptoms'])->one();
+        return $this->render('symptoms',['page'=>$page]);
+    }
+
+
 }
