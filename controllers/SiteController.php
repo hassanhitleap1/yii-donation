@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Config;
 use app\models\Pages;
 use app\models\SignupForm;
 use Yii;
@@ -63,7 +64,20 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $dataModel=Config::find()->where(['id'=> 1])->one();
+        $confirmed_cases=100;
+        $confirmed_deaths=200;
+        $quarantine_people=2100;
+        if($dataModel != null){
+            $confirmed_cases=$dataModel->confirmed_cases;
+            $confirmed_deaths=$dataModel->confirmed_deaths;
+            $quarantine_people=$dataModel->quarantine_people;
+        }
+        return $this->render('index',[
+            'confirmed_cases'=>$confirmed_cases,
+            'confirmed_deaths'=>$confirmed_deaths,
+            'quarantine_people'=>$quarantine_people,
+        ]);
     }
 
     /**
