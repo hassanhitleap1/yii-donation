@@ -186,7 +186,7 @@ Template Name:Couronne
                         </div>
                         <div class="footer_box_add">
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Address : </span>-512/fonia,canada</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Address : </span> Roma,Italy</li>
                                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#"><span>Email :</span>support@covid-19-italy.org</a></li>
                             </ul>
                         </div>
@@ -235,7 +235,6 @@ Template Name:Couronne
                                 <div class="footer_btm_icon">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     </ul>

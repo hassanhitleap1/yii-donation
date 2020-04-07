@@ -30,49 +30,7 @@ $this->title = 'covid 19 Italy';
                     </div>
                 </div>
             </div>
-            <div class="item cc_main_slide5">
-                <div class="med_img_overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
-                            <div class="cc_slider_cont1_wrapper">
-                                <div class="cc_slider_cont1">
-                                    <div class="medi">
-                                        <h1 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Protect<span>yourself</span></h1></div>
-                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">advice for the public</h2>
-                                    <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</p>
-                                    <ul>
-                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">READ MORE</a></li>
-                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">PURCHASE</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item cc_main_slide6">
-                <div class="med_img_overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                            <div class="cc_slider_cont1_wrapper">
-                                <div class="cc_slider_cont1">
-                                    <div class="medi">
-                                        <h1 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Corona<span>services</span></h1></div>
-                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">SYMPTOMS OF CORONAVIRUS DISEASE 2019</h2>
-                                    <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment.</p>
-                                    <ul>
-                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">READ MORE</a></li>
-                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">PURCHASE</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -81,22 +39,8 @@ $this->title = 'covid 19 Italy';
 <div class="category_wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="cat_about">
-                    <div class="icon_wrapper">
-                        <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon1.png" alt="img" class="img-responsive">
-                    </div>
-                    <div class="cat_img">
-                        <img src="<?= Yii::getAlias('@web')?>theme/images/corona/icon_11.png" alt="img" class="img-responsive">
-                    </div>
-                    <div class="cat_txt">
-                        <h1>OVERVIEW</h1>
-                        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
-                        <a href="about_us_corona.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+            <div class="offset-md-2 offset-lg-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="cat_about">
                     <div class="icon_wrapper">
                         <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon2.png" alt="img" class="img-responsive">
