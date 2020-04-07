@@ -5782,3 +5782,6 @@ ul.list-inline li {
 		height: 66px !important;
 	}
 }
+.help-block.help-block-error{
+	color: red;
+}
