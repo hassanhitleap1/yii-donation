@@ -392,17 +392,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "5181d7266b1dbf46495bf5e8ff59f334d1a7ca07"
+                "reference": "31562393a6467103fd0a56b944bb5ae54c17f2c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5181d7266b1dbf46495bf5e8ff59f334d1a7ca07",
-                "reference": "5181d7266b1dbf46495bf5e8ff59f334d1a7ca07",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/31562393a6467103fd0a56b944bb5ae54c17f2c2",
+                "reference": "31562393a6467103fd0a56b944bb5ae54c17f2c2",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": "^7.1.8 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.0",
                 "symfony/translation": "^3.4 || ^4.0 || ^5.0"
             },
             "require-dev": {
@@ -455,7 +456,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2020-04-05T15:47:25+00:00"
+            "time": "2020-04-06T21:32:38+00:00"
         },
         {
             "name": "npm-asset/pell",
@@ -2688,12 +2689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4919e0ba4ecea90506dd4d24094d5414303c1666"
+                "reference": "a75dfcec597379a04a62ffa70b4b8dc0db70fc6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4919e0ba4ecea90506dd4d24094d5414303c1666",
-                "reference": "4919e0ba4ecea90506dd4d24094d5414303c1666",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a75dfcec597379a04a62ffa70b4b8dc0db70fc6f",
+                "reference": "a75dfcec597379a04a62ffa70b4b8dc0db70fc6f",
                 "shasum": ""
             },
             "require": {
@@ -2763,7 +2764,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2020-04-06T05:16:08+00:00"
+            "time": "2020-04-07T06:31:18+00:00"
         },
         {
             "name": "psr/container",

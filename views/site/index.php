@@ -121,7 +121,7 @@ use yii\helpers\Html; ?>
                         <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/patient.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
-                        <span class="timer">294110</span>
+                        <span class="timer"><?=$confirmed_cases?></span>
                         <h5 class="con1">Confirmed cases</h5>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ use yii\helpers\Html; ?>
                         <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/doctor.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
-                        <span class="timer">12944</span>
+                        <span class="timer"><?=$confirmed_deaths?></span>
                         <h5 class="con2">Confirmed deaths</h5>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ use yii\helpers\Html; ?>
                         <a href="#"><img src="<?= Yii::getAlias('@web')?>/theme/images/png/heart.png" alt="img" class="img-responsive"></a>
                     </div>
                     <div class="count-description">
-                        <span class="timer">1020200</span>
+                        <span class="timer"><?=$quarantine_people?></span>
                         <h5 class="con4">Quarantine People</h5>
                     </div>
                 </div>
