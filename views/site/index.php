@@ -22,7 +22,7 @@ use yii\helpers\Html; ?>
                                     <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Whats Is Covid-19?</h2>
                                     <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">3D medical animation, depicting the shape of coronavirus as well as the cross-sectional view. Image shows the major elements including the Spike S protein, HE protein, viral envelope, and helical RNA</p>
                                     <ul>
-                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">donate</a></li>
+<!--                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">donate</a></li>-->
 
                                     </ul>
                                 </div>

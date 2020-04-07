@@ -98,7 +98,7 @@ Template Name:Couronne
                                 <?= Html::a('contact us &nbsp;', ['site/contact'], ['class' => 'gc_main_navigation hover_color']) ?>
                             </li>
 
-                            <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate &nbsp;</a> </li>
+<!--                            <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate &nbsp;</a> </li>-->
 
                         </ul>
                     </div>
@@ -156,7 +156,7 @@ Template Name:Couronne
                          <?= Html::a('contact us', ['site/contact']) ?>
                         </li>
                     
-                        <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate</a></li>
+<!--                        <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -212,9 +212,10 @@ Template Name:Couronne
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i>
                                             <?= Html::a('terms-conditions', ['site/terms-and-conditions']) ?>
                                         </li>
-                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>
+<!--                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>-->
                                     </ul>
                                 </div>
+                            </div>
                             </div>
 
                         </div>
