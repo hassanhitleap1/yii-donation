@@ -52,6 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'key',
+            'title',
             'body:ntext',
             'created_at',
             'updated_at',

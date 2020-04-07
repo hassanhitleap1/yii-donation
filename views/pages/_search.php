@@ -22,6 +22,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'key') ?>
 
+    <?= $form->field($model, 'title') ?>
+
     <?= $form->field($model, 'body') ?>
 
     <?= $form->field($model, 'created_at') ?>

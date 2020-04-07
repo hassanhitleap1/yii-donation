@@ -22,7 +22,8 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
                     <div class="med_tittle_cont">
                         <h1>About Corona Virus </h1>
                         <ol class="breadcrumb">
-                            <li><a href="{{url('/')}}">Home</a>
+                            <li>
+                                <?= Html::a('Home', ['site/index']) ?>
                             </li>
                             <li>About Us Corona</li>
                         </ol>

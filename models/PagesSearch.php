@@ -18,7 +18,7 @@ class PagesSearch extends Pages
     {
         return [
             [['id'], 'integer'],
-            [['key', 'body', 'created_at', 'updated_at'], 'safe'],
+            [['key','title', 'body', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -64,6 +64,7 @@ class PagesSearch extends Pages
         ]);
 
         $query->andFilterWhere(['like', 'key', $this->key])
+            ->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'body', $this->body]);
 
         return $dataProvider;

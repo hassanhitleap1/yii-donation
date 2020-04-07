@@ -15,6 +15,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'key')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'body')->widget(Pell::className(), []);?>
 
     <div class="form-group">

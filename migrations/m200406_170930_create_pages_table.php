@@ -21,6 +21,7 @@ class m200406_170930_create_pages_table extends Migration
         $this->createTable('{{%pages}}', [
             'id' => $this->primaryKey(),
             'key' => $this->string(32)->notNull(),
+            'title' => $this->string(255)->notNull(),
             'body' => $this->text(),
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),

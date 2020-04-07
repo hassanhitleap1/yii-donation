@@ -5770,3 +5770,15 @@ ul {
 ul.list-inline li {
 	display:inline;
 	}
+
+@media (min-width: 992px){
+	.nav-header {
+		height: 66px !important;
+	}
+}
+
+@media (max-width: 991px){
+	.nav-header {
+		height: 66px !important;
+	}
+}

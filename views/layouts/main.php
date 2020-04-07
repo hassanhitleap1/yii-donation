@@ -66,7 +66,7 @@ Template Name:Couronne
 </div>
 <!--header menu wrapper-->
 <div class="menu_wrapper header-area hidden-menu-bar stick">
-    <div class="container">
+    <div class="container nav-header">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 wow bounceInDown" data-wow-delay="0.3s">
                 <div class="header_logo">
