@@ -7,7 +7,7 @@
 use yii\helpers\Html;
 
 
-$this->title = 'terms and conditions';
+$this->title = 'Termini E Condizioni';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="med_tittle_section">

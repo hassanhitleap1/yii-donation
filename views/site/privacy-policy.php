@@ -7,7 +7,7 @@
 use yii\helpers\Html;
 
 
-$this->title = 'privacy policy';
+$this->title = 'politica sulla riservatezza';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="med_tittle_section">
