@@ -55,7 +55,33 @@ $this->params['breadcrumbs'][] = $this->title;
             'created_at',
             'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                    'class' => 'yii\grid\ActionColumn',
+                    'template' => '{view}  {update} {create}',
+                 'buttons' => [
+                      'view' => function ($url, $model) {
+                            return Html::a('view', $url, [
+                                        'title' => 'view',
+                                        'class' => 'btn btn-success'
+
+                            ]);
+                        },
+                     'update' => function ($url, $model) {
+                         return Html::a('update', $url, [
+                             'title' => 'view',
+                             'class' => 'btn btn-success'
+
+                         ]);
+                     },
+                     'create' => function ($url, $model) {
+                         return Html::a('create', $url, [
+                             'title' => 'view',
+                             'class' => 'btn btn-success'
+
+                         ]);
+                     },
+                 ]
+            ],
         ],
     ]); ?>
 
