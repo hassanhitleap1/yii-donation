@@ -19,8 +19,10 @@ use yii\helpers\Html; ?>
                                 <div class="cc_slider_cont1">
                                     <div class="medi">
                                         <h1 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Corona<span>Virus</span></h1></div>
-                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Whats Is Covid-19?</h2>
-                                    <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">3D medical animation, depicting the shape of coronavirus as well as the cross-sectional view. Image shows the major elements including the Spike S protein, HE protein, viral envelope, and helical RNA</p>
+                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Che cos'è Covid-19?</h2>
+                                    <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">
+                                        I virus della corona sono un grande gruppo di virus che possono causare malattie negli animali e nell'uomo. È noto che un certo numero di coronavirus causano infezioni respiratorie nell'uomo che vanno dal comune raffreddore a malattie più gravi come la sindrome respiratoria mediorientale e la sindrome respiratoria acuta grave (SARS). Il Coronavirus appena scoperto provoca il virus Corvid-19
+                                    </p>
                                     <ul>
 <!--                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">donate</a></li>-->
 
@@ -50,8 +52,8 @@ use yii\helpers\Html; ?>
                         <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_2.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
-                        <h1>PREVENTION</h1>
-                        <p>To prevent infection and to slow transmission of COVID-19! </p>
+                        <h1>Prevenzione</h1>
+                        <p>Per prevenire l'infezione e rallentare la trasmissione di COVID-19! </p>
                             <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/prevention']) ?>
                     </div>
                 </div>
@@ -65,8 +67,8 @@ use yii\helpers\Html; ?>
                         <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_3.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
-                        <h1>SYMPTOMS</h1>
-                        <p>The COVID-19 virus affects different people in different ways.</p>
+                        <h1>SINTOMI</h1>
+                        <p>Il virus COVID-19 colpisce persone diverse in modi diversi..</p>
                         <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/symptoms']) ?>
                     </div>
                 </div>
@@ -86,23 +88,14 @@ use yii\helpers\Html; ?>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 abt_section">
                 <div class="abt_heading_wrapper">
-                    <h1 class="med_bottompadder20">How COVID-19 Spreads</h1>
+                    <h1 class="med_bottompadder20">COME COVID19 SI SPARGE</h1>
                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <div class="abt_txt">
-                    <h3>Person-to-person spread</h3>
-                    <p class="med_toppadder20">The virus is thought to spread mainly from person-to-person. Between people who are in close contact with one another (within about 6 feet). Through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</p>
+                    <h3>DIFFUSIONE DA PERSONA A PERSONA</h3>
+                    <p class="med_toppadder20">Si pensa che il virus si diffonda principalmente da persona a persona. Tra le persone che sono in stretto contatto tra loro (entro circa 6 piedi). Attraverso goccioline respiratorie prodotte quando una persona infetta tossisce o starnutisce. Queste goccioline possono atterrare nella bocca o nel naso di persone che si trovano nelle vicinanze o che possono essere inalate nei polmoni..</p>
                 </div>
-                <div class="abt_chk med_toppadder30">
-                    <div class="content">
-                        <ul>
-                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i><span>Spread from contact</span></li>
-                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i><span>How easily the virus spreads</span></li>
-                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i><span>Who should be tested</span></li>
-                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i><span>How to get tested Covid-19</span></li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -122,7 +115,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$confirmed_cases?></span>
-                        <h5 class="con1">Confirmed cases</h5>
+                        <h5 class="con1">Casi confermati</h5>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
@@ -131,7 +124,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$confirmed_deaths?></span>
-                        <h5 class="con2">Confirmed deaths</h5>
+                        <h5 class="con2">Morti confermate</h5>
                     </div>
                 </div>
 
@@ -141,7 +134,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$quarantine_people?></span>
-                        <h5 class="con4">Quarantine People</h5>
+                        <h5 class="con4">Persone in quarantena</h5>
                     </div>
                 </div>
             </div>

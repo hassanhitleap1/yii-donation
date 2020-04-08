@@ -49,7 +49,7 @@ Template Name:Couronne
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="top_header_add">
                     <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Roma,Italy</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Roma, Italia</li>
                         <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#"><span>Email :</span> support@covid-19-italy.org</a></li>
                     </ul>
                 </div>
@@ -88,14 +88,14 @@ Template Name:Couronne
                         <ul class="main_nav_ul">
                            
                             <li class="has-mega gc_main_navigation">
-                                <?= Html::a('Home &nbsp;', ['site/index'], ['class' => 'gc_main_navigation hover_color'])  ?> 
+                                <?= Html::a('Pagina iniziale &nbsp;', ['site/index'], ['class' => 'gc_main_navigation hover_color'])  ?>
                             </li>
                             <li class="has-mega gc_main_navigation">
-                                <?= Html::a('Corona &nbsp;', ['site/corona'], ['class' => 'gc_main_navigation hover_color']) ?> 
+                                <?= Html::a("cos'è la corona? &nbsp;", ['site/corona'], ['class' => 'gc_main_navigation hover_color']) ?>
                                
                             </li>
                             <li class="has-mega gc_main_navigation">
-                                <?= Html::a('contact us &nbsp;', ['site/contact'], ['class' => 'gc_main_navigation hover_color']) ?>
+                                <?= Html::a('Contattaci &nbsp;', ['site/contact'], ['class' => 'gc_main_navigation hover_color']) ?>
                             </li>
 
 <!--                            <li class="has-mega gc_main_navigation"><a class="btn" href="https://pmny.in/AIEqYkgwh4gi" target="_blank">Donate &nbsp;</a> </li>-->
@@ -147,10 +147,10 @@ Template Name:Couronne
                 <div id='cssmenu' class="wd_single_index_menu">
                     <ul>
                         <li>
-                          <?= Html::a('Home', ['site/index']) ?>
+                          <?= Html::a('Pagina iniziale', ['site/index']) ?>
                         </li>
                         <li>
-                        <?= Html::a('Corona', ['site/corona']) ?>
+                        <?= Html::a("cos'è la corona", ['site/corona']) ?>
                         </li>
                         <li>
                          <?= Html::a('contact us', ['site/contact']) ?>
@@ -179,7 +179,7 @@ Template Name:Couronne
                         </div>
                         <div class="footer_box_add">
                             <ul>
-                                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Address : </span> Roma,Italy</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Indirizzo : </span> Roma, Italia</li>
                                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#"><span>Email :</span>support@covid-19-italy.org</a></li>
                             </ul>
                         </div>
@@ -197,20 +197,20 @@ Template Name:Couronne
                             <!--footer_2-->
                             <div class="col-xl-12 col-lg-12 col-md-21 col-sm-12 col-12 respons_footer_nav d-none d-sm-none d-md-block">
                                 <div class="footer_heading footer_menu">
-                                    <h1 class="med_bottompadder10">Links</h1>
+                                    <h1 class="med_bottompadder10">Link</h1>
                                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" class="img-responsive" alt="img" />
                                 </div>
                                 <div class="footer_ul_wrapper">
 
                                     <ul class="list-inline">
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i>
-                                            <?= Html::a('description', ['site/description']) ?>
+                                            <?= Html::a('Descrizione', ['site/description']) ?>
                                         </li>
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i>
-                                            <?= Html::a('privacy policy', ['site/privacy-policy']) ?>
+                                            <?= Html::a('politica sulla riservatezza', ['site/privacy-policy']) ?>
                                         </li>
                                         <li><i class="fa fa-caret-right" aria-hidden="true"></i>
-                                            <?= Html::a('terms-conditions', ['site/terms-and-conditions']) ?>
+                                            <?= Html::a('termini e condizioni', ['site/terms-and-conditions']) ?>
                                         </li>
 <!--                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>-->
                                     </ul>

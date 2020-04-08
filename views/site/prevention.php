@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'prevention';
+$this->title = 'Prevenzione';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="med_tittle_section">

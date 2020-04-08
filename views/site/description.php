@@ -5,10 +5,9 @@
 /* @var $model app\models\ContactForm */
 
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
 
-$this->title = 'description';
+
+$this->title = 'descrizione';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="med_tittle_section">
