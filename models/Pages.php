@@ -10,6 +10,7 @@ use Yii;
  *
  * @property int $id
  * @property string $key
+ *  @property string $title
  * @property string|null $body
  * @property string|null $created_at
  * @property string|null $updated_at
@@ -32,6 +33,7 @@ class Pages extends \yii\db\ActiveRecord
         return [
             [['key'], 'required'],
             [['body'], 'string'],
+            [['title'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['key'], 'string', 'max' => 32],
         ];
@@ -46,6 +48,7 @@ class Pages extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'key' => Yii::t('app', 'Key'),
             'body' => Yii::t('app', 'Body'),
+            'title' => Yii::t('app', 'Title'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
         ];

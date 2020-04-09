@@ -195,7 +195,7 @@ Template Name:Couronne
                         <div class="row">
 
                             <!--footer_2-->
-                            <div class="col-xl-12 col-lg-12 col-md-21 col-sm-12 col-12 respons_footer_nav d-none d-sm-none d-md-block">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 respons_footer_nav d-none d-sm-none d-md-block">
                                 <div class="footer_heading footer_menu">
                                     <h1 class="med_bottompadder10">Link</h1>
                                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" class="img-responsive" alt="img" />
@@ -217,6 +217,25 @@ Template Name:Couronne
                                 </div>
                             </div>
                             </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 respons_footer_nav d-none d-sm-none d-md-block">
+                            <div class="footer_heading footer_menu">
+                                <h1 class="med_bottompadder10">pagamento con</h1>
+                                <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" class="img-responsive" alt="img" />
+                            </div>
+                            <div class="footer_ul_wrapper">
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <img src="<?= Yii::getAlias('@web')?>/theme/images/visa.png"  style="width: 10%;" class="img-responsive" alt="img" />
+                                    </li>
+                                    <li><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        <img src="<?= Yii::getAlias('@web')?>/theme/images/mastercard.png" style="width: 10%;" class="img-responsive" alt="img" />
+                                    </li>
+
+                                    <!--                                        <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="#">donate</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
 
                         </div>
                     </div>
