@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 med_toppadder70">
                 <div class="abt_heading_wrapper abt_2_heading">
-                    <h1 class="med_bottompadder20"><?= Html::encode($page->title) ?>.</h1>
+                    <h1 class="med_bottompadder20"><?= $page->title ?>.</h1>
                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <div class="abt_txt">
