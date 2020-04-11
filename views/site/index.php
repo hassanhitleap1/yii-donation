@@ -19,12 +19,12 @@ use yii\helpers\Html; ?>
                                 <div class="cc_slider_cont1">
                                     <div class="medi">
                                         <h1 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Corona<span>Virus</span></h1></div>
-                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown">Che cos'è Covid-19?</h2>
-                                    <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">
-                                        I virus della corona sono un grande gruppo di virus che possono causare malattie negli animali e nell'uomo. È noto che un certo numero di coronavirus causano infezioni respiratorie nell'uomo che vanno dal comune raffreddore a malattie più gravi come la sindrome respiratoria mediorientale e la sindrome respiratoria acuta grave (SARS). Il Coronavirus appena scoperto provoca il virus Corvid-19
-                                    </p>
+                                    <h2 data-animation-in="fadeInDown" data-animation-out="animate-out fadeOutDown"><?=Yii::t('app', 'What_is_Covid_19')?></h2>
+                                        <p data-animation-in="zoomIn" data-animation-out="animate-out zoomIn">
+                                            <?=Yii::t('app', 'Desc_Covid')?>
+                                        </p>
                                     <ul>
-<!--                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#">donate</a></li>-->
+                                        <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#"><?=Yii::t('app', 'Buy_Now')?></a></li>
 
                                     </ul>
                                 </div>
@@ -52,9 +52,9 @@ use yii\helpers\Html; ?>
                         <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_2.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
-                        <h1>Prevenzione</h1>
-                        <p>Per prevenire l'infezione e rallentare la trasmissione di COVID-19! </p>
-                            <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/prevention']) ?>
+                        <h1><?=Yii::t('app', 'PREVENTION')?></h1>
+                        <p><?=Yii::t('app', 'PREVENTION_Desc')?> </p>
+                            <?= Html::a(Yii::t('app', 'Read_More').' <i class="fa fa-long-arrow-right"></i>', ['site/prevention']) ?>
                     </div>
                 </div>
             </div>
@@ -67,9 +67,9 @@ use yii\helpers\Html; ?>
                         <img src="<?= Yii::getAlias('@web')?>/theme/images/corona/icon_3.png" alt="img" class="img-responsive">
                     </div>
                     <div class="cat_txt">
-                        <h1>SINTOMI</h1>
-                        <p>Il virus COVID-19 colpisce persone diverse in modi diversi..</p>
-                        <?= Html::a('Read More <i class="fa fa-long-arrow-right"></i>', ['site/symptoms']) ?>
+                        <h1><?=Yii::t('app', 'SYMPTOMS')?></h1>
+                        <p><?=Yii::t('app', 'PREVENTION_Desc')?></p>
+                        <?= Html::a(Yii::t('app', 'Read_More').' <i class="fa fa-long-arrow-right"></i>', ['site/symptoms']) ?>
                     </div>
                 </div>
             </div>
@@ -88,12 +88,14 @@ use yii\helpers\Html; ?>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 abt_section">
                 <div class="abt_heading_wrapper">
-                    <h1 class="med_bottompadder20">COME COVID19 SI SPARGE</h1>
+                    <h1 class="med_bottompadder20"><?=Yii::t('app', 'How_Covid19_Sparge')?></h1>
                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <div class="abt_txt">
-                    <h3>DIFFUSIONE DA PERSONA A PERSONA</h3>
-                    <p class="med_toppadder20">Si pensa che il virus si diffonda principalmente da persona a persona. Tra le persone che sono in stretto contatto tra loro (entro circa 6 piedi). Attraverso goccioline respiratorie prodotte quando una persona infetta tossisce o starnutisce. Queste goccioline possono atterrare nella bocca o nel naso di persone che si trovano nelle vicinanze o che possono essere inalate nei polmoni..</p>
+                    <h3><?=Yii::t('app', 'Diffusion_From_Person_To_Perrson')?></h3>
+                    <p class="med_toppadder20">
+                        <?=Yii::t('app', 'Diffusion_From_Person_To_Perrson_Desc')?>
+                    </p>
                 </div>
 
             </div>
@@ -115,7 +117,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$confirmed_cases?></span>
-                        <h5 class="con1">Casi confermati</h5>
+                        <h5 class="con1"><?=Yii::t('app', 'Confirmed_Cases')?></h5>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
@@ -124,7 +126,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$confirmed_deaths?></span>
-                        <h5 class="con2">Morti confermate</h5>
+                        <h5 class="con2"><?=Yii::t('app', 'Dead_Confirm')?></h5>
                     </div>
                 </div>
 
@@ -134,7 +136,7 @@ use yii\helpers\Html; ?>
                     </div>
                     <div class="count-description">
                         <span class="timer"><?=$quarantine_people?></span>
-                        <h5 class="con4">Persone in quarantena</h5>
+                        <h5 class="con4"><?=Yii::t('app', 'Quarantined_People')?></h5>
                     </div>
                 </div>
             </div>
