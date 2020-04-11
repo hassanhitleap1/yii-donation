@@ -31,5 +31,6 @@ return [
     "Donate"=>"Donate",
     "Buy_Now"=>"Buy now",
     "Read_More"=>"Read More",
+    "Submit"=>"Submit",
 
 ];

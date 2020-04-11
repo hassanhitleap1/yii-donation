@@ -31,6 +31,7 @@ return [
     "Donate"=>"Donare",
     "Buy_Now"=>"Acquista ora",
     "Read_More"=>"Leggi di più",
+    "Submit"=>"Invia",
 
 
 

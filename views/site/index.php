@@ -54,7 +54,7 @@ use yii\helpers\Html; ?>
                     <div class="cat_txt">
                         <h1><?=Yii::t('app', 'PREVENTION')?></h1>
                         <p><?=Yii::t('app', 'PREVENTION_Desc')?> </p>
-                            <?= Html::a(Yii::t('app', 'Read_More').' <i class="fa fa-long-arrow-right"></i>', ['site/prevention']) ?>
+                            <a href="http://www.salute.gov.it/portale/salute/p1_2.html"><?= Yii::t('app', 'Read_More')?><i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,8 @@ use yii\helpers\Html; ?>
                     <div class="cat_txt">
                         <h1><?=Yii::t('app', 'SYMPTOMS')?></h1>
                         <p><?=Yii::t('app', 'PREVENTION_Desc')?></p>
-                        <?= Html::a(Yii::t('app', 'Read_More').' <i class="fa fa-long-arrow-right"></i>', ['site/symptoms']) ?>
+                        <a href="http://www.salute.gov.it/portale/salute/p1_2.html"><?= Yii::t('app', 'Read_More')?><i class="fa fa-long-arrow-right"></i></a>
+
                     </div>
                 </div>
             </div>

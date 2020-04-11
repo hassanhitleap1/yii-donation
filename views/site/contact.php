@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact';
+$this->title = Yii::t('app', 'Contact_Us');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="med_tittle_section">
@@ -21,8 +21,9 @@ $this->params['breadcrumbs'][] = $this->title;
                         <h1><?= Html::encode($this->title) ?></h1>
                         <ol class="breadcrumb">
                             <li>
-                                <?= Html::a('Home', ['site/index']) ?>
+                                <?= Html::a(Yii::t('app', 'Home'), ['site/index']) ?>
                             </li>
+
                             <li><?= Html::encode($this->title) ?></li>
                         </ol>
                     </div>
@@ -38,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div class="choose_heading_wrapper med_bottompadder30">
-                    <h1 class="med_bottompadder20">Contact us</h1>
+                    <h1 class="med_bottompadder20"><?=Yii::t('app', 'Contact_Us')?></h1>
                     <img src="<?= Yii::getAlias('@web')?>/theme/images/line.png" alt="title" class="med_bottompadder20">
                 </div>
                 <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
@@ -86,7 +87,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]) ?>
 
                     <div class="form-group">
-                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                        <?= Html::submitButton(Yii::t('app', 'Submit'), ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
 
                     <?php ActiveForm::end(); ?>
