@@ -5785,3 +5785,7 @@ ul.list-inline li {
 .help-block.help-block-error{
 	color: red;
 }
+
+.store{
+	width: fit-content !important;
+}

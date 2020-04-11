@@ -14,7 +14,7 @@ use yii\helpers\Html; ?>
                 <div class="med_img_overlay"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="cc_slider_cont1_wrapper">
                                 <div class="cc_slider_cont1">
                                     <div class="medi">
@@ -27,8 +27,13 @@ use yii\helpers\Html; ?>
                                         <li data-animation-in="bounceInLeft" data-animation-out="animate-out bounceOutLeft"><a href="#"><?=Yii::t('app', 'Buy_Now')?></a></li>
 
                                     </ul>
+
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <img src="<?= Yii::getAlias('@web')?>/theme/images/ios.svg" alt="title"  class="store float-right">
+                            <img src="<?= Yii::getAlias('@web')?>/theme/images/android.svg" alt="title"  class="store float-right">
                         </div>
                     </div>
                 </div>
@@ -100,6 +105,7 @@ use yii\helpers\Html; ?>
                 </div>
 
             </div>
+
         </div>
     </div>
 </div>
