@@ -5786,6 +5786,15 @@ ul.list-inline li {
 	color: red;
 }
 
-.store{
-	width: fit-content !important;
+.owl-carousel .owl-item img {
+	width: 35% !important;
+}
+
+@media (max-width: 991px){
+	.owl-carousel .owl-item img {
+		width: 25% !important;
+	}
+	.store{
+		float:left  !important;
+	}
 }
