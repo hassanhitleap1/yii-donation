@@ -42,6 +42,7 @@ class MainAsset extends AssetBundle
         'theme/js/imagesloaded.pkgd.min.js',
         'theme/js/isotope.pkgd.min.js',
         'theme/js/custom.js',
+        'js/main.js',
     ];
     public $depends = [
 //        'yii\web\YiiAsset',
