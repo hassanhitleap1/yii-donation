@@ -65,7 +65,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Twocheckout::privateKey('sandbox-private-key');
+       // Twocheckout::privateKey('sandbox-private-key');
         $dataModel=Config::find()->where(['id'=> 1])->one();
         $confirmed_cases=100;
         $confirmed_deaths=200;
