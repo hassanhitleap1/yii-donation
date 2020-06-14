@@ -4,7 +4,7 @@
     define("PAYPAGE_URL", "https://www.paytabs.com/apiv2/create_pay_page");
     define("VERIFY_URL", "https://www.paytabs.com/apiv2/verify_payment");
 
-class Paytabs {
+class paytabs {
 	
 
     private $merchant_email;

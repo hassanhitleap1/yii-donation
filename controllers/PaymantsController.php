@@ -5,6 +5,7 @@ namespace app\controllers;
 use Yii;
 use app\models\Paymants;
 use app\models\PaymantsSearch;
+use Paytabs;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -67,6 +68,51 @@ class PaymantsController extends Controller
         $model = new Paymants();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $pt = new Paytabs("test@paytabs.com", "nNqPdDtMxoj6ZxHOcqvejQk2v3YFlTNIGeyUS1Gpq0vqxdeJDKYXAiZ6lYLGRzpyNXsFZ95q9AQHO5rrPpoqIow4niLeRbNF8gk8");
+            $result = $pt->create_pay_page(array(
+
+                'merchant_email' => "test@paytabs.com",
+                'secret_key' => "nNqPdDtMxoj6ZxHOcqvejQk2v3YFlTNIGeyUS1Gpq0vqxdeJDKYXAiZ6lYLGRzpyNXsFZ95q9AQHO5rrPpoqIow4niLeRbNF8gk8",
+                'cc_first_name' => $model->cc_first_name,          
+                'cc_last_name' => $model->cc_last_name,            
+                'cc_phone_number' =>  $model->cc_phone_number,   
+                'phone_number' =>  $model->phone_number, 
+                'email' => $model->email, 
+                'billing_address' => $model->billing_address, 
+                'city' => $model->city, 
+                'state' => $model->state, 
+                'postal_code' =>$model->postal_code,
+                'country' => $model->country,
+                'address_shipping' => $model->address_shipping,
+                'city_shipping' => $model->city_shipping,
+                'state_shipping' =>$model->state_shipping,
+                'postal_code_shipping' => $model->postal_code_shipping,
+                'country_shipping' => $model->country_shipping,
+                "products_per_title" => $model->products_per_title,   //Product title of the product. If multiple products then add “||” separator
+                'quantity' => $model->quantity,                                //Quantity of products. If multiple products then add “||” separator
+                'unit_price' =>$model->unit_price,                                //Unit price of the product. If multiple products then add “||” separator.
+                "other_charges" => $model->other_charges,                                   //Additional charges. e.g.: shipping charges, taxes, VAT, etc.
+                'amount' =>$model->amount,                                        //Amount of the products and other charges, it should be equal to: amount = (sum of all products’ (unit_price * quantity)) + other_charges
+                'discount'=>$model->discount,                                           //Discount of the transaction. The Total amount of the invoice will be= amount - discount
+                'currency' => $model->currency,                                    
+            
+                'title' =>$model->title,               // Customer's Name on the invoice
+                "msg_lang" => $model->msg_lang,             //Language of the PayPage to be created. Invalid or blank entries will default to English.(Englsh/Arabic)
+                "reference_no" => $model->reference_no,       //Invoice reference number in your system
+               
+                
+                //Website Information
+                "site_url" => $model->site_url,      //The requesting website be exactly the same as the website/URL associated with your PayTabs Merchant Account
+                'return_url' =>$model->return_url,
+                "cms_with_version" => $model->cms_with_version,
+            
+                "paypage_info"  => $model->paypage_info,
+            ));
+            
+            echo "FOLLOWING IS THE RESPONSE: <br />";
+            print_r ($result);
+                 exit;
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
