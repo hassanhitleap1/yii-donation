@@ -1,23 +1,29 @@
 <?php
-@session_start();
-    define("AUTHENTICATION", "https://www.paytabs.com/apiv2/validate_secret_key");
-    define("PAYPAGE_URL", "https://www.paytabs.com/apiv2/create_pay_page");
-    define("VERIFY_URL", "https://www.paytabs.com/apiv2/verify_payment");
+namespace  app\components;
+use yii\base\BaseObject;
 
-class Paytabs {
+
+class Paytabs extends BaseObject{
 	
 
     private $merchant_email;
     private $secret_key;
 
-    function paytabs($merchant_email, $secret_key) {
+    public  function __construct($merchant_email, $secret_key) {
+        $this->merchant_email = $merchant_email;
+        $this->secret_key = $secret_key;
+    }
+
+
+
+    public function paytabs($merchant_email, $secret_key) {
         $this->merchant_email = $merchant_email;
         $this->secret_key = $secret_key;
     }
     
-    function authentication(){
+    public function authentication(){
         $obj = json_decode($this->runPost(AUTHENTICATION, array("merchant_email"=> $this->merchant_email, "secret_key"=>  $this->secret_key)),TRUE);
-		
+    
 		if($obj->response_code == "4000"){
           return TRUE;
         }
@@ -25,7 +31,7 @@ class Paytabs {
 		
     }
     
-    function create_pay_page($values) {
+    public function create_pay_page($values) {
         $values['merchant_email'] = $this->merchant_email;
         $values['secret_key'] = $this->secret_key;
         $values['ip_customer'] = $_SERVER['REMOTE_ADDR'];
@@ -35,14 +41,14 @@ class Paytabs {
     
     
     
-    function verify_payment($payment_reference){
+    public function verify_payment($payment_reference){
         $values['merchant_email'] = $this->merchant_email;
         $values['secret_key'] = $this->secret_key;
         $values['payment_reference'] = $payment_reference;
         return json_decode($this->runPost(VERIFY_URL, $values));
     }
     
-    function runPost($url, $fields) {
+    public function runPost($url, $fields) {
         $fields_string = "";
         foreach ($fields as $key => $value) {
             $fields_string .= $key . '=' . $value . '&';
